@@ -1,1 +1,53 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conversor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="eje_css_conversor.css">
+        <script src="eje_js_conversor.js"></script>
+    </head>
+    <body onload="document.getElementById('tcelsius').focus();">
+        
+        <main>
+            <p>Conversor de unidades de medidas de temperatura y logitud</p>
+            <div class="contenedorConversores">
+                <article>
+                    <header><u>TEMPERATURAS</u></header>
+                    <label>Celsius:</label>
+                    <input id="tcelsius" type="text" onkeypress="validar(event);" >
+                    <label>Fahrenheit:</label>
+                    <input id="tfahrenheit" type="text" onkeypress="validar(event);" >
+                    <label>Kelvin:</label>
+                    <input id="tkelvin" type="text" onkeypress="validar(event);" >
+                    <input id="btnCalcular" type="button" value="Calcular" onclick="calcular();" >
+                    <input id="btnLimpiar" type="button" value="Limpiar" onclick="limpiar();" >
+                </article>
+                <article>
+                    <header><u>LONGITUD</u></header>
+                    <label>Kilometro:</label>
+                    <input id="tkm" type="text" onkeypress="validar(event);" >
+                    <label>Milla:</label>
+                    <input id="tmillas" type="text" onkeypress="validar(event);" >
+                    <label>Metros:</label>
+                    <input id="tmetros" type="text" onkeypress="validar(event);" >
+                    <label>Yardas:</label>
+                    <input id="tyardas" type="text" onkeypress="validar(event);" >
+                    <input id="btnCalcularLongitudes" type="button" value="Calcular" onclick="calcularLongitudes();" >
+                    <input id="btnLimpiarLongitudes" type="button" value="Limpiar" onclick="limpiarLongitudes();" >
+                </article>
+                <article>
+                    <header><u>VOLUMEN</u></header>
+                    <label>Litros:</label>
+                    <input id="tlitros" type="text" onkeypress="validar(event);" >
+                    <label>Galones:</label>
+                    <input id="tgalones" type="text" onkeypress="validar(event);" >
+                    <input id="btnCalcularVolumen" type="button" value="Calcular" onclick="calcularVolumen();" >
+                    <input id="btnLimpiarVolumen" type="button" value="Limpiar" onclick="limpiarVolumen();" >                    
+                </article>
+            </div>
+            <a href="/Demo_1/index.php">volver</a>
+        </main>
+        
+    </body>
+</html>
